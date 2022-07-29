@@ -1,9 +1,9 @@
-import React from 'react';
-import Home from './Screens/Home/Home';
+import React from "react";
+import Home from "./Screens/Home/Home";
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Home />
     </div>
   );
 }

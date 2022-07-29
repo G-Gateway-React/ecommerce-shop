@@ -24,7 +24,7 @@ const MediaControlCard: React.FC<Props> = (props) => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         component="img"
-        sx={{ width: 200 }}
+        sx={{ width: 300 }}
         image={props.link}
         alt="Live from space album cover"
       />
