@@ -1,28 +1,28 @@
-import * as React from 'react';
+import * as React from "react";
 // import { useTheme } from '@mui/material/styles';
-import CardMedia from '@mui/material/CardMedia';
-import { Button, CustomCard } from './CardResently.style';
+import CardMedia from "@mui/material/CardMedia";
+import { Button, CustomCard } from "./CardResently.style";
 interface Props {
-    link:string
+  link: string;
 }
-interface Hover{
-  hover:boolean;
-  // setHover:()=> boolean ;
-}
-console.log(typeof true)
-const MediaControlCard:React.FC<Props>=(props)=> {
-  const [hover,setHover]=React.useState<Hover | any >(false)
- const onMouseEnter = () => {
+// interface Hover{
+//   hover:boolean;
+// }
+type Hover = boolean;
+console.log(typeof true);
+const MediaControlCard: React.FC<Props> = (props) => {
+  const [hover, setHover] = React.useState<Hover>(false);
+  const onMouseEnter = () => {
     setHover(true);
   };
-  const onMouseLeave = ()=> {
+  const onMouseLeave = () => {
     setHover(false);
   };
   return (
     <CustomCard>
       <CardMedia
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
         component="img"
         sx={{ width: 200 }}
         image={props.link}
@@ -31,5 +31,5 @@ const MediaControlCard:React.FC<Props>=(props)=> {
       <Button hover={hover}>more info</Button>
     </CustomCard>
   );
-}
-export default MediaControlCard
+};
+export default MediaControlCard;
