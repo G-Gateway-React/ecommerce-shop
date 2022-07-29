@@ -1,11 +1,9 @@
-import React from 'react';
-import Home from "../src/screens/homePage/Home"
-import './App.css';
-
+import React from "react";
+import Home from "./Screens/Home/Home";
 function App() {
   return (
     <div className="App">
-    <Home/>
+      <Home />
     </div>
   );
 }
