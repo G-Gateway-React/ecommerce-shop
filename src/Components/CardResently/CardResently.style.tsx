@@ -14,10 +14,11 @@ export const Button = styled.button<Hover>`
   font-size: 24px;
   line-height: 48px;
   letter-spacing: 0.04em;
-  color: #000000;
-  background:none;
+  color: #FFFFFF;
+    background:none;
+  border: none;
   /* border:none; */
-  display:${props => props.hover? "block" : "none"};
+  display:${props=> props.hover? "block" : "none"};
   &:hover{
     display:block;
   }
