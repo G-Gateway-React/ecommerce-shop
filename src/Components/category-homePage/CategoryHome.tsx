@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
 // import {Container} from './Style'
-import Card from '../../Components/card-category-home/Card'
+// import Card from '../../Components/card-category-home/Card'
 const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
