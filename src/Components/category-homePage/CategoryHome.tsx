@@ -5,7 +5,8 @@ import * as React from 'react';
 // import ImageListItem from '@mui/material/ImageListItem';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
-
+import { useEffect } from 'react';
+import axios from 'axios';
 // import {Container} from './Style'
 // import Card from '../../Components/card-category-home/Card'
 const itemData = [
@@ -60,6 +61,18 @@ const itemData = [
 
 
 export default function CategoryHome() {
+  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZWRhcmFlZDE5QGdtYWlsLmNvbSIsIm5hbWUiOiJzYWVkYSIsImlhdCI6MTY1OTQzMTk2M30.gOtU9dYNMz3rdWsFYP6GgtcyvrZ5Ca5CLCQpHE3B3NM'
+ // const [data , setData] =useState([])
+  useEffect(() => {
+    const fetchCat = async () => {
+      const { data } = await axios.get(
+        'https://pro-commerce1.herokuapp.com/api/v1/category',{headers:{'Authorization': `${token}`}})
+      console.log(data)
+    }
+    fetchCat()
+    }, [])
+  
+
     return (
       <>
         <Container maxWidth="lg">

@@ -25,6 +25,7 @@ justify-content:center;
 export const Par = styled.p`
   color:#fff;
     margin-top:50px;
+    margin-bottom:50px;
     font-size:25px;
 `
   
