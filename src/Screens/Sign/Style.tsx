@@ -10,12 +10,7 @@ export const FormParent= styled(Flex)`
 height:100vh;
 
 `;
-
-
-export const Input = styled(TextField)`
-
-`
-export const FormLogin = styled.form`
+export const FormSign = styled.form`
 flex-direction:column;
 display:flex;
 
@@ -36,15 +31,14 @@ Checkbox{
 }
 Button{
     margin-top:100px;
+
     
 }
 .css-1ps4owl-MuiTypography-root-MuiLink-root {
    color: #D1094B;`;
-export const FormControl = styled(FormControlLabel)`
-       width:100%;
-       .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
-    color: #D1094B;
-    text-decoration: red;
+export const FormControl = styled(TextField)`
+
+
 }
 
 `

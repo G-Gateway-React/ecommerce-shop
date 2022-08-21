@@ -9,7 +9,7 @@ export default function Button({outline, name}:PropsButoon) {
         <>
                <div>
    
-                <StyledButton outline={outline}>{ name}</StyledButton>
+                <StyledButton type='submit'  outline={outline}>{ name}</StyledButton>
   </div>
       </>
  
