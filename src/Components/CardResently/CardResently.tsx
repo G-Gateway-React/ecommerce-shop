@@ -8,10 +8,10 @@ interface Props {
 // interface Hover{
 //   hover:boolean;
 // }
-type Hover = boolean;
+// type Hover = boolean;
 console.log(typeof true);
 const MediaControlCard: React.FC<Props> = (props) => {
-  const [hover, setHover] = React.useState<Hover>(false);
+  const [hover, setHover] = React.useState<boolean>(false);
   const onMouseEnter = () => {
     setHover(true);
   };
