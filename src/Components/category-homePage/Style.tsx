@@ -5,6 +5,10 @@ export const Container = styled.div`
 export const Title = styled.h3`
 font-size:40px;
 padding:5px;
+display:flex;
+margin-top:50px;
+margin-bottom:50px;
+justify-content:center;
 span{
     background-color:#D1094B;
 }

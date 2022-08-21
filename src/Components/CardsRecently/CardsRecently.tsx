@@ -8,6 +8,7 @@ import {
   CustomCard,
 } from "./CardsRecently.style";
 
+console.log("testing")
 const CardsRecently: React.FC = () => {
   console.log(typeof Images);
   return (
