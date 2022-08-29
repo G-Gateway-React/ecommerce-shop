@@ -156,6 +156,7 @@ const slice = createSlice({
       state.user = user;
       state.token = token;
       state.loading = false;
+      console.log("welcome",user )
     });
     builder.addCase(loginThunk.rejected, (state, action) => {
       state.loading = false;
