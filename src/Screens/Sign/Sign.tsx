@@ -143,6 +143,7 @@ import { signupThunk } from '../../store/auth';
 // import { passwordValidation } from '../utils/validation';
 import toast from 'react-hot-toast';
 import { FormControl, FormParent, FormSign, LinkRegister } from './Style';
+import { productThunk } from '../../store/productsAuth';
 
 interface FormValues {
     name: string;
@@ -177,6 +178,7 @@ const SignupPage = () => {
   const dispatch = useAppDispatch();
 
   const submitHandler = async (values: FormValues) => {
+    // dispatch(productThunk())
     const { name, password, email } = values;
       const result = await dispatch(
           signupThunk({

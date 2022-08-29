@@ -7,6 +7,10 @@ export const Flex = styled.div`
   align-items: center;
 `;
 
+export const Container = styled.div`
+ width:80%;
+ margin:0 auto;
+`;
 const GlobalStyle = createGlobalStyle`
 
 * {

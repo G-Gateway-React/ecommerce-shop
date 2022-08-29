@@ -1,5 +1,5 @@
 import React from "react";
-import HomeSignup from "../HomeSignup/HomeSignup";
+// import HomeSignup from "../HomeSignup/HomeSignup";
 import LinkSectionFooter from "../LinkSectionFooter/LinkSectionFooter";
 import { CustomHome } from "./Footer.style";
 
@@ -8,7 +8,7 @@ import { CustomHome } from "./Footer.style";
 const Footer:React.FC=()=>{
 return(
     <CustomHome>
-        <HomeSignup/>
+        {/* <HomeSignup/> */}
         <LinkSectionFooter/>
     </CustomHome>
 )
